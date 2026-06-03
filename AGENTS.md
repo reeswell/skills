@@ -1,0 +1,36 @@
+Use the Reeswell coding conventions for JavaScript and TypeScript work in this
+repository.
+
+Project conventions, framework requirements, and explicit user instructions
+take precedence over this file.
+
+## Core Principles
+
+- Keep solutions simple, clear, and directly useful.
+- Avoid premature abstractions and features that are not needed yet.
+- Extract shared helpers only when repetition is real.
+- Prefer readable code over clever code.
+
+## Immutability
+
+- Prefer immutable updates for shared application state, props, inputs, and
+  API-derived data.
+- Return a new copy with the change instead of modifying the original in place.
+- Allow local mutation when it is scoped, framework-idiomatic, or clearer.
+
+## File Organization
+
+- Give each source file a clear, focused responsibility.
+- Split files that grow too large or take on too many concerns.
+- Keep small local types near usage.
+- Move exported, shared, or complex types to `types.ts` or `types/*.ts`.
+- Move meaningful shared constants to `constants.ts`.
+- Prefer feature or domain organization over file-type organization.
+- Aim for many cohesive small files. Keep 200 to 400 lines typical, and treat
+  800 lines as a ceiling unless there is a clear reason.
+
+## TypeScript
+
+- Declare explicit return types when feasible.
+- Extract complex inline types into named `type` or `interface` declarations.
+- Avoid `any`; use `unknown` and narrow before use.

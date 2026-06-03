@@ -1,0 +1,7 @@
+interface:
+  display_name: "Reeswell"
+  short_description: "JS and TS coding conventions"
+  default_prompt: "Use $reeswell to review or refactor this JavaScript or TypeScript code with simple, maintainable conventions."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,14 @@
+{
+  "name": "reeswell-skills",
+  "version": "0.1.0",
+  "description": "Reeswell coding conventions for JavaScript and TypeScript agents.",
+  "author": {
+    "name": "reeswell"
+  },
+  "skills": [
+    {
+      "name": "reeswell",
+      "path": "./skills/reeswell"
+    }
+  ]
+}
